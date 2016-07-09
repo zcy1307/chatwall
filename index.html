@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="Shortcut Icon" href="images/icon.ico">
+    <link rel="Bookmark" href="images/icon.ico">
+    <link rel="icon" href="images/icon.ico">
+    <link href="css/style.css" rel="stylesheet">
+    <title>聊天墙</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/socket.io.js"></script>
+    <script src="js/javascript.js"></script>
+</head>
+
+<body>
+    <div id="notice">
+        <marquee behavior="scroll" contenteditable="true" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" scrollamount="6" onmouseover="this.stop()" onmouseout="this.start()" width=100%>
+            <span unselectable="on">上墙请关注secourse微信公众号，向公众号发送信息即可，输入“admin 消息内容”可伪装管理员发送消息</span>
+        </marquee>
+    </div>
+    <div id='message'>
+        <div id='message1'>
+            <img id='headimg1' style="behavior:url(#default#savehistory)" />
+            <div id='text'>
+                <div id="text1">
+                    <span id="nickname1"></span>
+                </div>
+                <div id="text2">
+                    <span id="content1"></span>
+                </div>
+            </div>
+        </div>
+        <div id='message2'>
+            <img id='headimg2' style="behavior:url(#default#savehistory)" />
+            <div id='text'>
+                <div id="text1">
+                    <span id="nickname2"></span>
+                </div>
+                <div id="text2">
+                    <span id="content2"></span>
+                </div>
+            </div>
+        </div>
+        <div id='message3'>
+            <img id='headimg3' style="behavior:url(#default#savehistory)" />
+            <div id='text'>
+                <div id="text1">
+                    <span id="nickname3"></span>
+                </div>
+                <div id="text2">
+                    <span id="content3"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
